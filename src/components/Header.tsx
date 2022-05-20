@@ -1,4 +1,4 @@
-import ReactLogo from './react-logo.svg'
+import ReactLogo from 'icons/react-logo.svg'
 
 export const Header = () => (
   <header className="container py-4 px-2 sm:px-0 flex items-center justify-between">
