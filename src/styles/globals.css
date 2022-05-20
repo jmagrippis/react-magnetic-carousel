@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+#__next {
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  color-scheme: light;
+
+  /* common */
+  --transition-duration-short: 0.15s;
+  --transition-duration-long: 0.4s;
+
+  /* light */
+  --copy-base-color-light: 24 10% 10%;
+  --copy-muted-color-light: 30 6% 25%;
+  --surface-1-color-light: 60 9% 98%;
+
+  /* dark */
+  --copy-base-color-dark: 356 100% 97%;
+  --copy-muted-color-dark: 20 6% 90%;
+  --surface-1-color-dark: 24 10% 10%;
+
+  --copy-base-color: var(--copy-base-color-light);
+  --copy-muted-color: var(--copy-muted-color-light);
+  --surface-1-color: var(--surface-1-color-light);
+
+  --header-height: 4rem;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --copy-base-color: var(--copy-base-color-dark);
+  --copy-muted-color: var(--copy-muted-color-dark);
+  --surface-1-color: var(--surface-1-color-dark);
+}
+
+#__next {
+  @apply bg-surface-1 text-copy-base transition-colors;
+}
+
+a {
+  @apply underline decoration-primary-300 decoration-2 transition-colors;
+}
+
+a:hover {
+  @apply decoration-primary-500;
+}
+
+strong {
+  @apply font-semibold;
+}
