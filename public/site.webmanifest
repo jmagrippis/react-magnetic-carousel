@@ -1,6 +1,6 @@
 {
-  "name": "Svelte Hamburger",
-  "short_name": "Svelte Hamburger",
+  "name": "React Magnetic Carousel",
+  "short_name": "React Magnetic Carousel",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ff3e00",
+  "theme_color": "#67e8f9",
   "background_color": "#ffffff",
   "display": "standalone"
 }
